@@ -1,0 +1,31 @@
+a)
+x = 2; y = 3;
+if (x > y):
+    result = x;
+else:
+    result = y;
+
+W powyższym kodzie błędem jest niepotrzebny nawias przy if, oraz średniki na końcu linijek.
+Poprawny kod mógłby wyglądać tak:
+
+x = 2; y = 3
+if x > y:
+    result = x
+else:
+    result = y
+
+Zamiast używać średnika, można też umieścić deklaracje zmiennych w osobnych linijkach.
+
+b)
+for i in "axby": if ord(i) < 100: print (i)
+
+Powyższy kod się nie wykona ponieważ zostały w nim zawarte trzy instrukcje w jednej linijce.
+Poprawny kod zapisany w możliwie jak najmiejszej ilości linijek mógłby wyglądać tak:
+
+for i in "axby":
+    if ord(i) < 100: print (i)
+
+c)
+for i in "axby": print (ord(i) if ord(i) < 100 else i)
+
+Kod jest poprawny ponieważ w jednej linijce znajdują się dwie instrukcje (reszta zagnieżdzona jest w princie)

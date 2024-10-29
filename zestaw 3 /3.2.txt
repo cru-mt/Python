@@ -1,0 +1,25 @@
+a)
+L = [3, 5, 4] ; L = L.sort()
+Błędem tutaj jest przypisywanie L do L.sort(), zamiast tego należy po prostu wywołać L.sort()
+
+b)
+x, y = 1, 2, 3
+Za dużo liczb do ilości zmiennych
+
+c)
+X = 1, 2, 3 ; X[1] = 4
+Tak zainicjowana zmienna będzie tuplem, a nie listą, więc nie można zmienić wartości.
+
+d)
+X = [1, 2, 3] ; X[3] = 4
+X[3] wychodzi poza zasięg listy.
+
+e)
+X = "abc" ; X.append("d")
+Nie można użyć append na string. Zamiast tego wystarczy użyć operatora +
+
+f)
+L = list(map(pow, range(8)))
+Nie można mapować w ten sposób funkcji pow, ponieważ potrzebuje ona dwóch argumentów.
+Zamiast tego wystarczy np. napisać:
+L = [pow(x, 2) for x in range(8)]
